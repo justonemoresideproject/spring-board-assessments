@@ -1,0 +1,33 @@
+//1
+const containerId = document.firstElementChild.children[1].children[1];
+//2
+const containerIdTwo = document.querySelector('#container');
+//3
+const seconds = document.querySelectorAll('.second');
+//4
+const olSecond = document.querySelector('ol').querySelector('.third');
+//5
+const p = document.createElement('p')
+p.innerText = "Hello!"
+containerIdTwo.prepend(p);
+//6
+document.querySelector('.footer').classList.add('main');
+//7
+document.querySelector('.footer').classList.remove('main');
+//8
+const li = document.createElement('li');
+//9
+li.innerText = "four";
+//10
+document.querySelector('ul').append(li);
+//11
+const ol = document.querySelector('ol');
+const olLi = ol.children;
+function changeListGreen(list){
+    for(let i = 0; i < list.length; i++){
+        list[i].classList.toggle('green');
+    }
+}
+changeListGreen(olLi);
+//12
+document.querySelector('body').querySelector('.footer').remove('.footer');
